@@ -13,7 +13,7 @@
         <img class="logo" src="images/Group 20.png" alt="">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a onmouseover="myFunction()" href="#">Shop</a></li>
+            <li><a onmouseover="showModal()" href="#">Shop</a></li>
             <li><a href="#">Product</a></li>
             <li><a href="#">Page</a></li>
             <li><a href="#">Blog</a></li>
@@ -27,11 +27,16 @@
         </div>
 
         <ul>
-            <li><a href="#" style="font-size: 1.2rem;"><span>Cart</span></a>
+            <li><a href="#" style="font-size: 1.2rem;"><i data-feather="shopping-bag"
+                        style="display:inline-block;  vertical-align: -5px; margin-right: 10px;"></i><span>Cart</span></a>
             </li>
-            <li><a href="#">Alex Pitter</a></li>
+            <li><a href="#"><img src="images/propic.png" class="profile-image" alt=""><span> Alex Pitter
+                    </span></a></li>
         </ul>
     </nav>
+
+    <!-- -----Modal starts---- -->
+
     <div style="position: relative; display: flex; justify-content: center;">
         <div class="modal-section" id="modalId">
             <div class="modal">
@@ -86,7 +91,9 @@
             </div>
         </div>
     </div>
+    <!-- -----Modal ends---- -->
 
+    <!-- -----Hero section starts---- -->
 
     <div class="hero contain-fluid">
         <img src="images/Rectangle 3.png" alt="">
@@ -103,9 +110,12 @@
             </div>
         </div>
     </div>
+    <!-- -----Hero section ends---- -->
 
 
     <div class="contain">
+
+        <!-- -----Ads section starts---- -->
         <div style="margin-top: 30px;" class="temp">
             <div class="ads">
                 <div class="ads-child box1">
@@ -126,7 +136,9 @@
                 </div>
             </div>
         </div>
+        <!-- -----Ads section ends---- -->
 
+        <!-- -----Products section starts---- -->
 
         <section class="product-section">
             <h1 style="text-align:center;">Meet our best selling products</h1>
@@ -134,6 +146,7 @@
             <img class="flower flower1" src="images/Group-1.png" alt="">
             <img class="flower flower2" src="images/Group.png" alt="">
             <div class="products">
+                <div class="product-arrow-div"> <i data-feather="arrow-right"></i></div>
                 <div class="product">
                     <img src="images/Rectangle 13.png" alt="">
                     <div class="product-info">
@@ -173,6 +186,7 @@
             </div>
 
             <div style="margin-top: 50px;" class="products">
+                <div class="product-arrow-div"> <i data-feather="arrow-right"></i></div>
                 <div class="product">
                     <img src="images/Rectangle 13-1.png" alt="">
                     <div class="product-info">
@@ -211,17 +225,22 @@
                 </div>
             </div>
         </section>
+        <!-- -----Products section ends---- -->
+
+        <!-- -----Testimonial section starts---- -->
 
         <div style="display: flex; justify-content: center;">
             <section class="testimonial">
-                <p class="green-paragraph">Clients say about us</p>
-                <h1>Testimonial</h1>
+                <div class="testimonial-arrow-div"> <i data-feather="arrow-right"></i></div>
+
+                <p class="green-paragraph" style="margin-left: 20px;">Clients say about us</p>
+                <h1 style="margin-left: 20px;">Testimonial</h1>
                 <div class="testimonial-item">
                     <img src="images/Rectangle 16.png" alt="">
                     <div class="testimonial-info">
                         <h2>Natasha Malina</h2>
                         <p style="padding: 10px 0px; color: #6e98a6; font-size: 1.1rem;">Beauty Model in USA</p>
-                        <p style="color: rgb(85, 83, 83); ">Lorem ipsum dolor, sit amet consectetur
+                        <p style="color: rgb(146, 146, 146); ">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit.
                             Sit, illum mollitia provident
                             voluptatem
@@ -235,7 +254,7 @@
                     <div class="testimonial-info">
                         <h2>Natasha Malina</h2>
                         <p style="padding: 10px 0px; color: #6e98a6; font-size: 1.1rem;">Beauty Model in USA</p>
-                        <p style="color: rgb(85, 83, 83); ">Lorem ipsum dolor, sit amet consectetur
+                        <p style="color: rgb(146, 146, 146); ">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit.
                             Sit, illum mollitia provident
                             voluptatem
@@ -246,20 +265,26 @@
                 </div>
             </section>
         </div>
+        <!-- -----Testimonial section ends---- -->
 
-        <div>
+        <!-- -----Featured section starts---- -->
+
+        <div class="featured-section">
             <h1 style="text-align:center;">Featured in</h1>
             <div class="featured">
-
                 <img src="images/XMLID 406.png" alt="">
                 <img src="images/XMLID 380.png" alt="">
                 <img src="images/XMLID 229.png" alt="">
-                <img src="images/XMLID 173.png" alt="">
                 <img src="images/XMLID 1.png" alt="">
                 <img src="images/Group 17.png" alt="">
+                <img src="images/XMLID 173.png" alt="">
             </div>
         </div>
+        <!-- -----Featured section ends---- -->
+
+
     </div>
+    <!-- -----Footer section starts---- -->
 
     <div class="contain-fluid">
         <footer>
@@ -298,11 +323,13 @@
             </div>
             <div class="footer-child row-five">
                 <p style="font-weight: 900;">Subscribe</p>
-                <!-- <input type="text" name="search"> -->
-                <a href=""><span>mail@example.com</span></a>
+                <a href="#"><i data-feather="mail"
+                        style="display:inline-block;  vertical-align: -5px; margin-right: 10px;"></i><span>mail@example.com</span></a>
             </div>
         </footer>
     </div>
+    <!-- -----footer section wnds---- -->
+
 
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="script.js"></script>
